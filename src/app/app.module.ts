@@ -1,5 +1,5 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { ZiggeoModule } from 'angular-ziggeo';
@@ -7,7 +7,7 @@ import { ZiggeoModule } from 'angular-ziggeo';
 
 @NgModule({
   declarations: [
-    AppComponent,
+    AppComponent
   ],
   imports: [
     BrowserModule, ZiggeoModule

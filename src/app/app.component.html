@@ -9,11 +9,18 @@
 <ul>
   <li>
     <h5>Ziggeo Player</h5>
-    <ziggeo-player></ziggeo-player>
+    <ziggeo-player #ziggeoplayer
+        [apiKey]="'18bc7c2cf9edb8693d3c1c54198599b1'"
+        [options]="{video: '443ff28c4649cf1d98779ad206768fc2', width: 520, height: 380}"
+    ></ziggeo-player>
+    <a class="btn btn-success">Success</a>
   </li>
   <li>
-    <!--<h5>Ziggeo Recorder</h5>-->
-    <!--<ziggeo-recorder></ziggeo-recorder>-->
+    <h5>Ziggeo Recorder</h5>
+    <ziggeo-recorder #ziggeorecorder
+        [apiKey]="'18bc7c2cf9edb8693d3c1c54198599b1'"
+        [options]="{height: 200, width: 300, forceflash: true}"
+    ></ziggeo-recorder>
   </li>
 </ul>
 
