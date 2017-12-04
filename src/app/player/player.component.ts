@@ -7,24 +7,27 @@ import { ZiggeoModel } from 'angular-ziggeo';
 
 @Component({
     selector: 'app-player',
-    templateUrl: './player.component.html',
-    styleUrls: ['./player.component.css']
+    templateUrl: './player.component.html'
 })
 export class PlayerComponent implements AfterViewInit {
     player: any;
     @ViewChild('ziggeoplayer') ziggeoplayer: ZiggeoModel;
 
-    constructor() {}
+    constructor () {}
 
-    ngAfterViewInit() {
+    ngAfterViewInit () {
         this.player = this.ziggeoplayer.playerInstance;
 
-        this.player.on('attached', function () {
-            console.log('attached');
+        this.player.on('attached', () => {
+            console.log('Attached');
         });
 
-        this.player.on('playing', function () {
-            console.log('playing your action here');
+        this.player.on('playing', () => {
+            console.log('Playing your action here');
+        });
+
+        this.player.on('paused', () => {
+            console.log('Paused, your action here');
         });
     }
 }

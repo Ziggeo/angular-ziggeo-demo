@@ -7,8 +7,7 @@ import { ZiggeoModel } from 'angular-ziggeo';
 
 @Component({
     selector: 'app-recorder',
-    templateUrl: './recorder.component.html',
-    styleUrls: ['./recorder.component.css']
+    templateUrl: './recorder.component.html'
 })
 export class RecorderComponent implements AfterViewInit {
     recorder: any;
@@ -19,15 +18,15 @@ export class RecorderComponent implements AfterViewInit {
     ngAfterViewInit () {
         this.recorder = this.ziggeorecorder.recorderInstance;
 
-        this.recorder.on('recordingprogress', () => {
+        this.recorder.on('recording', () => {
             console.log('Recorder in progress');
         }, this);
 
-        this.recorder.on('accessgranted', function () {
+        this.recorder.on('access_granted', () => {
             console.log('Recorder has camera access');
         }, this);
 
-        this.recorder.on('verified', function () {
+        this.recorder.on('verified', () => {
             console.log('playing your action here');
         }, this);
     }
