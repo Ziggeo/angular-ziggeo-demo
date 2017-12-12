@@ -21,7 +21,7 @@
     "@angular/platform-browser": "^5.0.0",
     "@angular/platform-browser-dynamic": "^5.0.0",
     "@angular/router": "^5.0.0",
-    "angular-ziggeo": "angular-ziggeo",
+    "angular-ziggeo": "^0.0.2",
     "ziggeo-client-sdk": "^0.0.29",
     "bootstrap": "^3.3.7",
     "core-js": "^2.4.1",
