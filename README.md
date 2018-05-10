@@ -176,14 +176,31 @@ After you can use `app-recorder` in your app
    - seek
 ```
 
+##### Additional application level options:
+    - Screen recorder options:
+    ```
+    [options]="{ ...,
+        allowscreen: true,
+        chrome_extension_id: 'Your chrome extension ID',
+        chrome_extension_install_link: 'Your link to chrome extension installation',
+        opera_extension_id: 'Your opera extension ID',
+        opera_extension_install_link: 'Your link to opera extension installation'
+    ...}"
+    ```
+
+    Screen Capture is currently supported by Firefox, Chrome and Opera. <br/>
+    - Firefox: Direct support -- no extensions or plugins required <br/>
+    - Chrome + Opera: use extension builder located in your application manager <br/>
+
+    Note: By default Ziggeo Chrome/Opera extension will be set to `Ziggeo screen recorder` extension which will be available only in `localhost`. <br/>
+    [For more info](https://ziggeo.com/features/screen-recording), in this url you also can find how to set your own extensions <br/>
+
+    - Locale setting : `[options]="{ ..., l10n: 'de', ...}"` <br/>
+    - Set WebRTC streaming option `webrtc_streaming` to `true` : `[options]="{ ..., webrtc_streaming: true, ...}"`
+
 
 #### Additional Parameters
 
 You can add all available all Ziggeo related options from below link:
 - [Ziggeo Available Parameters](https://ziggeo.com/docs/sdks/javascript/browser-integration/parameters#javascript-revision=v1-stable&javascript-version=v2)
 - [Ziggeo Available Embedding Events](https://ziggeo.com/docs/sdks/javascript/browser-interaction/events#javascript-revision=v1-r29&javascript-version=v2)
-
-
-#### Working Demo:
-- [react-live-demo](https://sambua.github.io/react-ziggeo-page)
-- [react-ziggeo demo for local install](https://github.com/Ziggeo/react-ziggeo/tree/master/demo)
