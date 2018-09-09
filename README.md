@@ -1,13 +1,15 @@
 ## Angular 5 example use of integration [Ziggeo](https://ziggeo.com) ready application
 
 #### Installation demo project
-- Install all dependencies `npm install`
-- `ng build`
-- For UMD use you can include `ZiggeoModule` from `ziggeo-angular` package directly.<br/>
+- Go to repository folder
+- Install all dependencies by using `npm install`
+- Build by using `ng build`
+- [optional] For UMD use you can include `ZiggeoModule` from `ziggeo-angular` package directly.<br/>
 Example: `import {ZiggeoModule} from 'angular-ziggeo'`
-- For `AOT` ready need to include directly from path <br/>
+- [optional] For `AOT` ready need to include directly from path <br/>
 import { ZiggeoModule } from 'root_path/node_modules/angular-ziggeo/build/ziggeo/index'; <br/>
-- and start server with `ng serve` also ready for production `--prod` and AOT `--aot`
+- After the build complete start server with `ng serve` also ready for production `--prod` and AOT `--aot`
+- Check the showed url on the console on the browser, the default is `http://localhost:4200/`
 
 
 #### Just for note
