@@ -15,6 +15,11 @@ export class RecorderComponent implements AfterViewInit {
 
     constructor () {}
 
+    ngOnInit() {
+        ZiggeoApi.V2.Locale.mediaLocale.register({"ba-videorecorder-controlbar.stop": "Finish Recorder"}, 10);
+        ZiggeoApi.V2.Locale.mediaLocale.register({"ba-videorecorder-controlbar.stop-tooltip": "Finish Recorder"}, 10);
+    }
+
     ngAfterViewInit () {
         this.recorder = this.ziggeorecorder.recorderInstance;
 
